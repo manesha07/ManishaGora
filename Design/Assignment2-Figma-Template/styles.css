@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display&display=swap');
     h1,h2 {
         font-family: 'Playfair Display';
         color: #334756;
@@ -64,7 +64,6 @@
         max-width: 1175px;
         margin:auto;
         padding:auto;
-        overflow: visible;
     }
     .logo
     {
@@ -113,6 +112,7 @@
     }
     .services-body {
         display: inline-block;
+        margin-top: 46px;
     }
     .services-card-main {
         height: 200px;
@@ -163,7 +163,9 @@
     }
     .location {
         width:1440px;
-        background: black;
+        margin-left:-147px;
+    }
+    .loc-img {
     }
     .location-right {
         width:385px;
@@ -229,6 +231,35 @@
         display: block;
         margin: 0px 220px 22px 20px;
     }
+    .info-paragraph1 {
+        font-weight: bold;
+        font-size: 20px;
+        color: #334756;
+        margin-top:45px;
+    }
+    .info-paragraph2 {
+        font-weight: normal;
+        font-size: 12px;
+        color: #667580;
+    }
+    .info-space-between {
+        margin-top: 20px;
+    }
+    .info-body {
+        width: 360px;
+    }
+    .info-body1 {
+        margin-left: 40px;
+        margin-right: 24.82px;
+    }
+    .info-text {
+        color: #086DE0;
+        font-weight: bold;
+        margin-right: 40px;
+    }
+    .info-bottom {
+        vertical-align: center;
+    }
     .card-middle-right {
         margin-left:30px;
     }
@@ -259,4 +290,11 @@
     }
     .footer-last {
         text-align: center;
+    }
+    .footer-highlight {
+        font-size: 20px;
+        color: #086DE0;
+    }
+    .footer-icon {
+        /* margin-left: 30px; */
     }
