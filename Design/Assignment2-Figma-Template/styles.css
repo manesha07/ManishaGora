@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap');
+    h1,h2 {
+        font-family: 'Playfair Display';
+        color: #334756;
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h1>span {
+        font-size: 40px;
+    }
+    h2>span {
+        font-size: 32px;
+    } 
+    ul {
+        list-style: none;
+    }
+    .highlight-title {
+        color:#FF4C29;
+        font-family: 'Playfair Display';
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+    .button-highlight {
+        background:#FF4C29;
+        color:white;
+    }
+    p,span,ul,button,li {
+        font-family: 'Lato', sans-serif;
+    } 
+    p,li,span{
+        color: #667580;
+    }
+    .white-text {
+        color: white;
+    }
+    .black-text {
+        color:black;
+    }
+    .left {
+        float:left;
+    }
+    .right {
+        float: right;
+    }
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    .main-div {
+        margin-top: 80px;
+    }
+    .down-arrow::after {
+        content: url("images/down-arrow.png");
+        padding:5px;
+    }
+    .container {
+        max-width: 1175px;
+        margin:auto;
+        padding:auto;
+        overflow: visible;
+    }
+    .logo
+    {
+        font-family: Playfair Display;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 43px;
+    }
+    .header-container {
+        margin-top: 53px;
+    }
+    .nav li {
+        display:inline-block;
+        padding: 0px 24px;
+    }
+    .login{
+        font-weight: bold;
+        color:#334756;
+        margin-left: 200px;
+        padding:0px;
+    }
+    .login::after {
+        vertical-align: middle;
+        content: url("images/user.png");
+        padding-left: 10px;
+    }
+    .intro-image {
+        width:614px;
+        float:left;
+    }
+    .intro-right {
+        float:right;
+        width:483px;
+    }
+    .intro-button {
+        margin-top: 70px;
+        width:370px;
+    }
+    button {
+        justify-content: center;
+        align-items: center;
+        padding: 13px 43px;
+    }
+    .service-header-right {
+        width:497px;
+    }
+    .services-body {
+        display: inline-block;
+    }
+    .services-card-main {
+        height: 200px;
+        background: #2C394B;
+    }
+    .service-card-paragraph {
+        padding-left: 31px;
+        padding-right:31px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .services-card {
+        width:355px;
+    }
+    .service-card-photos {
+        width: 355px;
+    }
+    .services-card-content {
+        background:#2C394B;  
+        height:64px;  
+        text-align :center;
+    }
+    .services-card-content-bottom { 
+        height:64px;  
+        text-align :center;
+    }
+    .services-card-content-box {
+        margin: 0px 30px 21px 30px;
+        padding: 21px;
+        text-align: center;
+    }
+    .services-card-content-box-left {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .services-card-content-right-right {
+        font-size:12px;
+        padding-left: 10px;
+        padding-top:2px;
+    }
+    .facilities-header-p {
+        width:450px;
+    }
+    .facilities-body-left li{
+        font-weight: bold;
+        font-size: 24px;
+        padding: 14px 24px;
+    }
+    .location {
+        width:1440px;
+        background: black;
+    }
+    .location-right {
+        width:385px;
+        margin-left: 45px;
+    }
+    .testimonial-card {
+        width:395px;
+        height:259px;
+        background: #334756;
+        position: relative;
+    }
+    .middle-right-testimonial-card {
+        margin-left:24px;
+    }
+    .testimonial-card-quotation {
+        margin:24px 0px 0px 30px;
+        position: absolute;
+    }
+    .testimonial-card-content {
+        margin:41px 30px 0px 35px;
+        z-index: 1;
+    }
+    .testimonial-card-profile {
+        position:absolute;
+        bottom:36px;
+        left: 35px;
+    }
+    .third-card {
+        width: 330px;
+    }
+    .testimonial-card-profile-pic {
+        margin-right: 16px;
+    }
+    .social-proof-header {
+        width: 770px;
+        text-align: center;
+        margin:auto;
+    }
+    .social-proof-body {
+        display: inline-block;
+        padding:50px 50px 0px 50px;
+    }
+    .social-proof-body-img {
+        margin-left:130px;
+    }
+    .information-body {
+        display:inline-block;
+    }
+    .information-body-content {
+        width: 360px;
+    }
+    .information-body-content-first {
+        margin: 20px 44px 8px 20px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #334756;  
+        display: block; 
+    }
+    .information-body-content-second {
+        font-weight: 300;
+        font-size: 10px;
+        color: #2C394B;
+        display: block;
+        margin: 0px 220px 22px 20px;
+    }
+    .card-middle-right {
+        margin-left:30px;
+    }
+    footer {
+        margin-bottom: 107px;
+    }
+    .footer-body {
+        display: inline-block;
+        list-style: none;
+    }
+    .footer-body-center {
+        margin-left: 128.5px;
+    }
+    .footer-body-content li {
+        padding: 20px;
+    }
+    .footer-heading {
+        padding:0px;
+    }
+    .footer-head {
+        color: #334756;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .footer-line {
+        width:75%;
+        text-align: center;
+    }
+    .footer-last {
+        text-align: center;
+    }
