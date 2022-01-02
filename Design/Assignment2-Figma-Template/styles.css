@@ -42,6 +42,9 @@
     .black-text {
         color:black;
     }
+    .grey-blue {
+        color: #334756;
+    }
     .left {
         float:left;
     }
@@ -153,6 +156,9 @@
         padding-left: 10px;
         padding-top:2px;
     }
+    .ser-card-middle-right {
+        margin-left: 53.53px;
+    }
     .facilities-header-p {
         width:450px;
     }
@@ -164,8 +170,6 @@
     .location {
         width:1440px;
         margin-left:-147px;
-    }
-    .loc-img {
     }
     .location-right {
         width:385px;
@@ -271,13 +275,14 @@
         list-style: none;
     }
     .footer-body-center {
-        margin-left: 128.5px;
+        margin-left: 108px;
     }
     .footer-body-content li {
         padding: 20px;
     }
     .footer-heading {
         padding:0px;
+        margin-top: 15px 0px 15px 0px;
     }
     .footer-head {
         color: #334756;
@@ -296,5 +301,10 @@
         color: #086DE0;
     }
     .footer-icon {
-        /* margin-left: 30px; */
+        margin-left: 20px;
+    }
+    .footer-loc {
+        color:#334756;
+        font-weight: bold;
+        font-size: 16px;
     }
