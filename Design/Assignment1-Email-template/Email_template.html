@@ -41,7 +41,20 @@
         font-weight: 600;
         font-size: larger;
         padding: 20px;
-    }    
+    }   
+    .social-media {
+        display:inline-block;
+        text-align: center;
+    } 
+    .column-img {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background: red;
+    }
+    td {
+        text-align: center;
+    }
 </style>
 
 <body style="margin:0;padding:0; background-color: rgb(199, 220, 238); width: 100%;">
@@ -71,16 +84,20 @@
         </tr>
         <tr>
             <td>
-                <table style="width: 100%;">
+                <table >
                     <tr>
-                        <td style="padding: 30px;">
-                            <p style="text-align: center;"><img src="images/email2.png" alt="" width="310px" height="180px" /></p>
-                            As a publisher, your emails will use the default AddThis email template unless you choose to create your own.
+                        <td class="image-row">
+                            <img class="column-img" src="images/email2.png" alt="" width="310px" height="180px" />
+                            <p style="text-align: center;">
+                                As a publisher, your emails will use the default AddThis email template unless you choose to create your own.</p>
+                            
                         </td>
                         <td>&nbsp;</td>
-                        <td>
-                            <p style="text-align: center;"><img src="images/email3.jpg" alt="" width="310px" height="180px"/></p>
-                            You can choose to override your current default template by specifying a different one in your AddThis code. 
+                        <td class="image-row">
+                            <img class="column-img" src="images/email3.jpg" alt="" width="310px" height="180px"/>
+                            <p style="text-align: center;">
+                                You can choose to override your current default template by specifying a different one in your AddThis code.
+                            </p> 
                         </td>
                     </tr>
                 </table>
@@ -94,10 +111,10 @@
                             <p style="padding: 4px;">Email Template Design Company</p>
                             <p style="padding: 4px;">Email@email.com</p>
                             <p style="padding: 4px;">Suryabinayak,bkt</p>
-                            <center>
+                            <div class="social-media" >
                             <img src="images/fb..png" alt="fb_icon" height="30px" width="30px" style="padding: 5px; margin-top: 5px;">
                             <img src="images/twt.png" alt="fb_icon" height="30px" width="30px" style="padding: 5px; margin-top: 5px;">
-                            </center>
+                            </div>
                         </td>
                     </tr>
                 </table>    

@@ -464,7 +464,7 @@
         .body-container, .header-container {
             width: 92.326%;
             margin: auto;
-            background: brown;
+            /* background: brown; */
         }
         .body-container-2 {
             width:92.326%;
@@ -603,7 +603,7 @@
        } 
        .body-container, .header-container {
            max-width: 1175px;
-           background: green;
+           /* background: green; */
        }
        
        .large-content {
