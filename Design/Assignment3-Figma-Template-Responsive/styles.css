@@ -42,11 +42,11 @@
         content: url("images/down-arrow.png");
         padding:5px;
     }
-    .container {
+    /* .container {
         max-width: 375px;
         margin:auto;
         padding:auto;
-    }
+    } */
     .header-container {
         width:100%;
     }
@@ -453,11 +453,11 @@
     }
 
     @media screen and (min-width:768px) {
-        .container {
+        /* .container {
             max-width: 834px;
             margin:auto;
             width:100%;
-        }
+        } */
         .logo-Luemburs {
             padding: 14px 0px 57px 351px;
         }
@@ -573,7 +573,7 @@
         .social-body {
             text-align: center;
         }
-        .information ,.information-body-main,{
+        .information ,.information-body-main{
             width: 100%;
         }
         .information-header {
@@ -597,10 +597,10 @@
            margin:0px;
            padding:0px;
        }
-       .container {
+       /* .container {
            max-width:1440px;
            margin:auto;
-       } 
+       }  */
        .body-container, .header-container {
            max-width: 1175px;
            /* background: green; */
