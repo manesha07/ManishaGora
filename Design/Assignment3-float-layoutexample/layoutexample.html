@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        max-width: 700px;
+        text-align: center;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    div {
+        border:1px solid;
+        margin: 5px;
+    }
+    .header {
+        margin: 5px;
+    }
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    .side-bar {
+        float: left;
+        width: 200px;
+        height: 500px;
+    }
+    .main-content {
+        float: right;
+        width: 450px;
+        height: 500px;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <header>
+            <div class= "header">
+                <p>Header</p>
+            </div>
+        </header>
+        <div class= "content clearfix">
+            <!-- <div class="clearfix"> -->
+                <div class="content side-bar">
+                    <p>Side-Bar</p>  
+                </div>
+                <div class="content main-content">
+                    <p>Main-Content</p>
+                </div>
+            <!-- </div> -->
+        </div>
+        <div class="footer">
+            <footer>
+                <p>Footer</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

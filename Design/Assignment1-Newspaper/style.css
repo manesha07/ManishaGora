@@ -1,0 +1,65 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+h1 {
+    margin-bottom:5px;
+    text-align:left;
+    margin-top:10px;
+}
+.line {
+    border:2px solid black;
+    color:2px;
+}
+
+.heading {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin:auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    width:80%;
+    margin:auto;
+    padding:20px;
+    text-align:justify;   
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+.container1-2 {
+    width:30%;
+    margin-left: 10px;
+    padding-left:20px;
+    padding-right:20px;
+    float:left;
+}
+
+.container3-4 {
+    width: 58%;
+    float: left;
+}
+
+.container3 {
+    width:47%;
+    margin:0px;
+    float:left;    
+}
+
+.container4 {
+    width:47%;
+    margin-left:20px; 
+    float:left; 
+}
+
+.container5 {
+    display:inline-block;
+    width: 58%;
+}
