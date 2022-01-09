@@ -72,6 +72,7 @@
         font-weight: normal;
         font-size: 16px;
         color: #667580;
+        line-height: 160%;
     }
     .logo-Luemburs {
         width: 35.46%;
@@ -131,10 +132,12 @@
         padding-bottom:55.91px;
         font-family: Lato;
         font-style: normal;
-        padding-left: 31px;
-        padding-right:31px;
+        padding-left: 21px;
+        padding-right:21px;
         font-size: 12px;
         text-align: center;
+        margin-top: 20px;
+        line-height: 110%;
     }
     .services-card {
         width:100%;
@@ -532,6 +535,45 @@
             font-size: 12px;
             text-align: center;
             margin-top:0px;
+        }
+        .location {
+            width:100%;
+            margin-top:48px;
+        }
+        .location-right {
+            width: 42.987%;
+            margin:17px;
+        }
+        .loc-last {
+            width: 34%;
+            display:inline-block;
+            margin-left:28px;
+        }
+        .loc-header {
+            margin-top:40px;
+            margin-bottom:20px;
+            margin-left:0px;
+            /* width:81.873%;
+            margin-left: 28px; */
+        }
+        .loc-img {
+            width:51.168%;
+            margin-bottom:94px;
+        }
+        .loc-content {
+            width:100%;
+        }
+        .loc-text {
+            margin-top: 44px;
+            margin-bottom: 40px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120%;
+            color: #086DE0;
+            display: inline-block;
+            margin-right: 24px;
         }
         .facilities, .facilities-body {
             width:100%;
