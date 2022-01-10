@@ -1,5 +1,5 @@
-## Code Like Her Fellowship - Cohort II
-Hey there! These are my assignments of Code like her program conducted by CodeRush.
+## Code Like Her Fellowship - Cohort II 
+Hey there! These are my _Assignments_ of Code like her program conducted by CodeRush. :smile:
 ## Design
 1. [Assignment- 1 :Newspaper layout](https://github.com/Coderushnepal/ManishaGora/tree/main/Design/Assignment1-Newspaper)
 2. [Assignment- 2 :Email Template](https://github.com/Coderushnepal/ManishaGora/tree/main/Design/Assignment2-Email-template)
