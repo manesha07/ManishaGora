@@ -1065,11 +1065,11 @@
     }
     .middle-1 {
         width:15.48%;
-        display:block;  
+        display:inline-block;  
     }
     .middle-2,.middle-3 {
         width:20.40%;
-        display:block;  
+        display:inline-block;  
         margin-left:120px;
     }
     .footer-body-center li {
