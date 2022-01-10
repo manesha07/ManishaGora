@@ -1,4 +1,4 @@
-## Code Like Her Fellowhip - Cohort II
+## Code Like Her Fellowship - Cohort II
 Hey there! These are my assignments of Code like her program conducted by CodeRush.
 ## Design
 1. [Assignment- 1 :Newspaper layout](https://github.com/Coderushnepal/ManishaGora/tree/main/Design/Assignment1-Newspaper)
