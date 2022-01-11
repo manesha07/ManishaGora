@@ -272,6 +272,7 @@ button {
     border: 1px solid #7B7B7B;
     box-sizing: border-box;
     color: #7B7B7B;
+    padding:3px 3px;
 }
 .tags {
     width:100%;
@@ -289,7 +290,7 @@ button {
 .tags-left {
     padding-top:4px;
     margin-right:24px;
-    background: red;
+    /* background: red; */
     display: inline-block;
     height:31px;
     text-align:left;
@@ -500,7 +501,12 @@ button {
     border-radius: 5px;
     border:1px solid white;
 }
-.intro-2,.intro-3 {
+.intro-large {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 123.6%;
+}
+.intro-2,.intro-3 ,.intro-4,.intro-5{
     margin-top: 60px;
 }
 .container-2 {
@@ -518,6 +524,7 @@ button {
     margin-top: 40px;
     margin-bottom:40px;
     width:100%;
+    /* background: brown; */
 }
 .latest-heading {
     margin-top:30px;
@@ -588,7 +595,7 @@ button {
     padding-bottom:43px;
 }
 .tags-left, .tags-right {
-    background: red;
+    /* background: red; */
     display:block;
     text-align:left;
     margin-left:18px;
@@ -686,9 +693,106 @@ button {
     width:18px;
     padding:9px;
 }
-
 }
 
+@media screen and (min-width:1336px) and (max-width:1440px) {
+    *{
+        margin:0px;
+        padding:0px;
+    }
+.wrapper {
+    max-width:1440px;
+    margin:auto;
+} 
+.bars {
+    display:none;
+    visibility: hidden;
+}
+.nav {
+    width:50.23%;
+    margin-left:350px;
+    /* margin-right:29px; */
+}
+.nav li {
+    margin-right:40px;
+}
+.blog-text {
+    height: 300px;
+}
+.blog-large {
+    margin-top:120px;
+    }  
+.main-body {
+    width:85.7142%;
+} 
+.container-1 {
+    width:68%;
+    margin-right: 60px;
+}
+.content {
+    margin-top:25px;
+}
+.intro-large {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 123.6%;
+}
+.container-2 {
+    width:26.9593%;
+    float:left;
+    /* background:blue; */
+}
+.search-box {
+    height:60px;
+    width:300px;
+}
+.search-content {
+    margin:16px 130px 13px 18px;   
+}
+.latest-heading {
+    font-size:25px;
+}
+.latest-content {
+    margin-top: 10px;
+    width:100%;
+}
+.latest-img {
+    margin-right:16px;
+    float:left;
+    /* width:11.6618%; */
+}
+.latest-text {
+    display:inline-block;
+    float:left;
+    width:70.0140%;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150.6%;
+}
+.post-first {
+    margin-top:25px;
+}
+.categories-heading {
+    font-size:25px;
+}
+.categories-content {
+    margin-top:25px;
+}
+.categories-text {
+    width:65.72769%;
+    margin-right: 18px;
+    font-size: 16px;
+}
+.tags-heading {
+    font-size:25px;
+}
+.tags-main {
+    margin-top:25px;
+}
+.footer-box {
+    margin-top:10px;
+}
 
+}
 
 
