@@ -234,7 +234,6 @@ button {
 }
 .latest-text {
     display:inline-block;
-    float:left;
     width:73.1778%;
 }
 .post-last {
@@ -377,14 +376,12 @@ footer ul li,.newsletter-text {
     margin:18px 110px 18px 18px;
     display:inline-block;
     vertical-align: middle;  
-    float:left; 
 }
 .footer-send {
     height:60px;
     width:81px;
     background:#FF5300;
-    display:inline-block;
-    vertical-align: middle;
+    display:block;
     text-align: center;
     float:right;
 }
@@ -542,7 +539,6 @@ button {
 }
 .latest-text {
     display:inline-block;
-    float:left;
     width:69.0140%;
     font-weight: normal;
     font-size: 16px;
@@ -695,11 +691,16 @@ button {
 }
 }
 
-@media screen and (min-width:1336px) and (max-width:1440px) {
+@media screen and (min-width:1024px) {
     *{
         margin:0px;
         padding:0px;
     }
+body {
+    max-width:1440px;
+    margin:auto;
+}
+
 .wrapper {
     max-width:1440px;
     margin:auto;
@@ -763,7 +764,6 @@ button {
 }
 .latest-text {
     display:inline-block;
-    float:left;
     width:70.0140%;
     font-weight: normal;
     font-size: 16px;
