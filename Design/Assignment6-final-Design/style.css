@@ -294,7 +294,7 @@ button {
 }
 .tags-main {
     margin-top:30px;
-    margin-bottom:40px;
+    padding-bottom:43px;
 }
 .tags-left {
     padding:4px 13px 3px 13px;
@@ -303,24 +303,18 @@ button {
     height:24px;
     text-align:left;
     margin-left:0px;
-    /* background:#FFF7F4;
-     */
-     background: red;
+    background:#FFF7F4;  
 }
 .tags-right {
     padding:4px 13px 3px 13px;
     display:inline-block;
     height:24px;
-    /* background:#FFF7F4; */
-    background:red;
+    background:#FFF7F4;
 }
 .tags-content {
     margin-bottom:18px;
     margin-left:0px;
     padding-left:13px;
-}
-.tags-last {
-    margin-bottom:0px;
 }
 .footer-main {
     margin-top:50px;
