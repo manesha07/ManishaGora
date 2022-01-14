@@ -285,9 +285,10 @@ button {
     display:inline-block;
     width:30px;
     height:30px;
+    text-align: center;
     border: 1px solid #7B7B7B;
     box-sizing: border-box;
-    padding:3px 3px;
+    padding:7px 0px 7px 0px;
     font-size: 12.8px;
     line-height: 123.6%;
 }
@@ -302,13 +303,16 @@ button {
     height:24px;
     text-align:left;
     margin-left:0px;
-    background:#FFF7F4;
+    /* background:#FFF7F4;
+     */
+     background: red;
 }
 .tags-right {
     padding:4px 13px 3px 13px;
     display:inline-block;
-    height:31px;
-    background:#FFF7F4;
+    height:24px;
+    /* background:#FFF7F4; */
+    background:red;
 }
 .tags-content {
     margin-bottom:18px;
@@ -586,6 +590,7 @@ button {
     font-weight: normal;
     font-size: 12.8px;
     line-height: 123.6%;
+    padding:3.5px 0px 3.5px 0px;
 }
 .tags-main {
     margin-top:18px;
