@@ -7,4 +7,9 @@ Hey there! These are my _Assignments_ of Code like her program conducted by Code
 4. Assignment- 4:[Responsive website](https://github.com/Coderushnepal/ManishaGora/tree/main/Design/Assignment5-Figma-Website-responsive)
 5. Assignment- 5:[Final Design Assignment](https://github.com/Coderushnepal/ManishaGora/tree/main/Design/Assignment6-final-Design)
 ## Javascript
-1. Assignment- 1:[Basics of Javascript](https://github.com/Coderushnepal/ManishaGora/tree/main/Javascript/Assignment1)
+1. Assignment- 1:[Basics of Javascript](https://github.com/Coderushnepal/ManishaGora/tree/main/Javascript/Assignment1-Basics_of_js)
+2. Assignment- 2:[String Manipulation](https://github.com/Coderushnepal/ManishaGora/tree/main/Javascript/Assignment2-String_maipulation)
+3. Assignment- 3:[Array_Manipulation](https://github.com/Coderushnepal/ManishaGora/tree/main/Javascript/Assignment3-Array_manipulation)
+4. Assignment- 4:[Array and Object](https://github.com/Coderushnepal/ManishaGora/tree/main/Javascript/Assignment4-Array_and_Object)
+5. Assignment -5:[Password](https://github.com/Coderushnepal/ManishaGora/tree/main/Javascript/Assignment5-Password_using_DOM)
+6. Assignment -6:[Balloon Generator](https://github.com/Coderushnepal/ManishaGora/tree/main/Javascript/Assignment6-Balloon_Generator)
