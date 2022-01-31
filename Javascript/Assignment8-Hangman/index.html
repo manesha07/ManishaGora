@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #34495e;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 20px 0 0;
+}
+
+.game-container {
+  padding: 20px 30px;
+  position: relative;
+  margin: auto;
+  height: 350px;
+  width: 450px;
+}
+
+.figure-container {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.figure-part {
+  display: none;
+}
+
+.wrong-letters-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.wrong-letters-container p {
+  margin: 0 0 5px;
+}
+
+.wrong-letters-container span {
+  font-size: 24px;
+}
+
+.word {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.letter {
+  border-bottom: 3px solid #2980b9;
+  display: inline-flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+  height: 50px;
+  width: 20px;
+}
+
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background: #ad4089;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.popup button {
+  cursor: pointer;
+  background-color: #fff;
+  color: #ad4089;
+  border: 0;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.popup button:active {
+  transform: scale(0.98);
+}
+
+.popup button:focus {
+  outline: 0;
+}
+
+.notification-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 0 0;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: -50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.notification-container p {
+  margin: 0;
+}
+
+.notification-container.show {
+  transform: translateY(-50px);
+}
+
+
+</style>
+<body> 
+    <h1>Hangman</h1>
+    <p>Find the hidden word - Enter a letter</p>
+    <div class="game-container">
+        <svg height="250" width="200" class="figure-container">
+          <!-- Rod -->
+          <line x1="60" y1="20" x2="140" y2="20"></line>
+          <line x1="140" y1="20" x2="140" y2="50"></line>
+          <line x1="60" y1="20" x2="60" y2="230"></line>
+          <line x1="20" y1="230" x2="100" y2="230"></line>
+  
+          <!-- Head -->
+          <circle cx="140" cy="70" r="20" class="figure-part"></circle>
+          <!-- Body -->
+          <line x1="140" y1="90" x2="140" y2="150" class="figure-part"></line>
+          <!-- Arms -->
+          <line x1="140" y1="120" x2="120" y2="100" class="figure-part"></line>
+          <line x1="140" y1="120" x2="160" y2="100" class="figure-part"></line>
+          <!-- Legs -->
+          <line x1="140" y1="150" x2="120" y2="180" class="figure-part"></line>
+          <line x1="140" y1="150" x2="160" y2="180" class="figure-part"></line>
+        </svg>
+  
+        <div class="wrong-letters-container">
+          <div id="wrong-letters"></div>
+        </div>
+  
+        <div class="word" id="word">
+          
+    </div>
+      </div> 
+      <div class="popup-container" id="popup-container">
+        <div class="popup">
+          <h2 id="final-message"></h2>
+          <button id="play-button">Play Again</button>
+        </div>
+      </div>
+      <div class="notification-container" id="notification-container">
+        <p>Already entered this letter</p>
+      </div>
+</body>
+<script src="script.js"></script>
+</html>
