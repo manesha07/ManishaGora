@@ -23,7 +23,7 @@ var direction =1;
 var Ldirection =1;
 
 ball.addEventListener("click", function(event){
-var interval = setInterval(function () {
+ setInterval(function () {
     var newTop = parseInt(event.target.style.top) + 5 * direction +"px";
     var newLeft = parseInt(event.target.style.left) + 2 * Ldirection +"px";
     event.target.style.top = newTop;
@@ -36,7 +36,7 @@ var interval = setInterval(function () {
     if(parseInt(newTop) <= 0) {
         direction = 1;
     }
-    if ((parseInt(newLeft) >= container.clientWidth - ball.clientWidth ))
+    if (parseInt(newLeft) >= container.clientWidth - ball.clientWidth )
     {
         Ldirection *=-1;
     }
