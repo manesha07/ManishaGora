@@ -1,13 +1,10 @@
 function Ball(size, id) {
     this.width = size;
     this.height = size;
-  
     this.id = id;
   
     this.create = function (container, position) {
       this.element = document.createElement("div");
-      console.log("this is inside create position" +container);
-      console.log("this is inside create position" +position);
       this.element.setAttribute("id", this.id);
   
       this.element.style.width = this.width + "px";
@@ -18,15 +15,15 @@ function Ball(size, id) {
       this.element.style.position = "absolute";
       this.element.style.top = position.top + "px";
       this.element.style.left = position.left + "px";
-      console.log("positiontop"+position.top);
   
       this.element.addEventListener("click", function () {
-        console.log(this.id);
+        console.log("thiss",this);
         var animate = this;
         var direction =1;
         var Ldirection =1;
-        var interval = setInterval(function () {
-            console.log(animate);
+        (setInterval(function(that) {
+            console.log("this",that);
+            console.log("this bhitra",this);
             var newTop = parseInt(animate.style.top) + 5 * direction +"px";
             var newLeft = parseInt(animate.style.left) + 2 * Ldirection +"px";
             animate.style.top = newTop;
@@ -46,7 +43,7 @@ function Ball(size, id) {
             if(parseInt(newLeft) <= 0) {
                 Ldirection = 1;
             }
-        }, 1000/60);
+        }, 1000/60))(1);
       });
   
       container.appendChild(this.element);
@@ -88,5 +85,5 @@ for (var i = 0; i < 10; i++) {
 }
 
 console.log(ball);
-console.log(container.element);
+console.log(container);
 console.log(position(50).top);
