@@ -1,0 +1,13 @@
+export const PRODUCTS = "/products";
+export const PRODUCT = "/products/:id";
+export const CART = "/cart";
+export const REGISTER = "/register";
+export const LOGIN = "/login";
+export const CUSTOMERLOGIN = "/customerlogin";
+export const MODAL = "/modal";
+export const ADDPRODUCT = "/adminaddproduct";
+export const EDITPRODUCT = "/admineditproduct";
+export const ADMIN_DASHBOARD = "/dashboard";
+export const GET_PRODUCT = "/getproduct";
+export const HOME1 = "/";
+export const MYORDERS = "/myorders";
