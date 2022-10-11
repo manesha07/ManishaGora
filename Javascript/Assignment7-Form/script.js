@@ -43,7 +43,7 @@ var Inputs = [
       id: "password",
     },
     {
-      name: "Confirm Password",
+      name: "Confirm_Password",
       placeholder: "Enter password again",
       type: "password",
       errorMsg: "Passwords do not match",
@@ -105,57 +105,57 @@ form.appendChild(submit);
 
 submit.addEventListener('click', function(event) {
 console.log("successful");
-var x = document.myForm.Username.value;
+var x = document.myForm.Username;
 var y = document.getElementById("username");
-    if (x.length < 3 || x == "") {
+    if (x.value.length < 3 || x.value == "") {
         y.style.visibility = "visible";
-        document.forms["myForm"]["Username"].style.border = "2px solid red";
+        x.style.border = "2px solid red";
     }
     else {
         y.style.visibility = "hidden";
-        document.forms["myForm"]["Username"].style.border = "2px solid #2ecc71";
+        x.style.border = "2px solid #2ecc71";
     }
 
 var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-var e = document.myForm.Email.value;
+var e = document.myForm.Email;
 var f = document.getElementById("email");
-if(e == "" || e!=emailPattern) {
+if(e.value == "" || e.value != emailPattern) {
     f.style.visibility = "visible";
-    document.forms["myForm"]["Email"].style.border = "2px solid red";
+    e.style.border = "2px solid red";
 }
 else {
     f.style.visibility = "hidden";
-    document.forms["myForm"]["Email"].style.border = "2px solid #2ecc71";
+    e.style.border = "2px solid #2ecc71";
 }
 
-var validatePassword = document.forms["myForm"]["Password"].value; // password validation
+var v = document.myForm.Password; // password validation
 forPassword =document.getElementById("password");
-if (validatePassword.length < 6 || validatePassword == "") {
+if (v.value.length < 6 || v.value == "") {
     forPassword.style.visibility = "visible";
-    document.forms["myForm"]["Password"].style.border = "2px solid red";
+    v.style.border = "2px solid red";
 } 
 else {
     forPassword.style.visibility = "hidden";
-    document.forms["myForm"]["Password"].style.border = "2px solid #2ecc71";
+    v.style.border = "2px solid #2ecc71";
 }
 
-var validateConfirmPassword = document.forms["myForm"]["Confirm Password"].value; //confirm password validation
+var w = document.myForm.Confirm_Password; //confirm password validation
 forConfirmPassword = document.getElementById("password2");
-if (validateConfirmPassword != validatePassword || validateConfirmPassword == "") {
-    if (validateConfirmPassword == "") {
+if (w.value != v.value || w.value == "") {
+    if (w.value == "") {
         forConfirmPassword.innerHTML = "Confirm Password is required";
         forConfirmPassword.style.visibility = "visible";
-        document.forms["myForm"]["Confirm Password"].style.border = "2px solid red";
+        w.style.border = "2px solid red";
     }
     else {
         forConfirmPassword.innerHTML = "Password2 do not match";
         forConfirmPassword.style.visibility = "visible";
-        document.forms["myForm"]["Confirm Password"].style.border = "2px solid red";
+        w.style.border = "2px solid red";
     }
 } 
 else {
     forConfirmPassword.style.visibility = "hidden";
-    document.forms["myForm"]["Confirm Password"].style.border = "2px solid #2ecc71";
+    w.style.border = "2px solid #2ecc71";
 }
 });
 

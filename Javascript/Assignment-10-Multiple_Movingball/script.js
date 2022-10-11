@@ -17,13 +17,11 @@ function Ball(size, id) {
       this.element.style.left = position.left + "px";
   
       this.element.addEventListener("click", function () {
-        console.log("thiss",this);
         var animate = this;
         var direction =1;
         var Ldirection =1;
-        (setInterval(function(that) {
-            console.log("this",that);
-            console.log("this bhitra",this);
+        var interval = setInterval(function(that) {
+          console.log("thiss",that)
             var newTop = parseInt(animate.style.top) + 5 * direction +"px";
             var newLeft = parseInt(animate.style.left) + 2 * Ldirection +"px";
             animate.style.top = newTop;
@@ -43,7 +41,7 @@ function Ball(size, id) {
             if(parseInt(newLeft) <= 0) {
                 Ldirection = 1;
             }
-        }, 1000/60))(1);
+        }, 1000/60,this);
       });
   
       container.appendChild(this.element);
