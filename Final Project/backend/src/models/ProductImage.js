@@ -10,5 +10,6 @@ class ProductImage extends DBModel {
     super('product_images');
   }
 }
-
+console.log("k ho wsto")
 export default ProductImage;
+
