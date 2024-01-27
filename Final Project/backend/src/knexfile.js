@@ -23,4 +23,5 @@ const configuration = {
   }
 };
 
+export const connection = Knex(configuration);
 export default configuration;
