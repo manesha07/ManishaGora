@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 
 // dotenv.config({ path: `../.env` });
 dotenv.config();
-console.log(process.env.DB_HOST);
+console.log("hehep",process.env.DB_CLIENT);
 const configuration = {
   client: process.env.DB_CLIENT,
   connection: {
