@@ -204,7 +204,6 @@ export async function removeProduct(id) {
   await new ProductImage().removeByParams({ productId: id });
   await new Order().removeByParams({ productId: id });
   await new Products().removeById(id);
-  console.log("kkkk");
   return {
     message: 'Record removed successfully'
   };

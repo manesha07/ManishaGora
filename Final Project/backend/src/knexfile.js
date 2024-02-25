@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-
+import Knex from 'knex';
 // dotenv.config({ path: `../.env` });
 dotenv.config();
 console.log("hehep",process.env.DB_CLIENT);

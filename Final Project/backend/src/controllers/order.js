@@ -23,7 +23,6 @@ import * as orderService from '../services/order.js';
  * @param {Function} next
  */
 export function getOrder(req, res, next) {
-  console.log("kuuu",req.body);
   orderService
     .getOrder(+req.params.orderIdentifier)
     .then((data) => res.json(data))
