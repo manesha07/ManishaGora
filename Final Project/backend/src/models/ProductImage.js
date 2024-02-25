@@ -12,3 +12,4 @@ class ProductImage extends DBModel {
 }
 
 export default ProductImage;
+

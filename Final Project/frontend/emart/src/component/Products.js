@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import Skeleton from 'react-loading-skeleton';
 import { NavLink } from 'react-router-dom';
-// import axios from "axios";
 
 import fetchProducts, { resetProducts } from "../actions/products";
 
@@ -19,28 +18,6 @@ const Products = () => {
     const [pageNumber, setPageNumber] = useState(1);
     const [searchQuery, setSearchQuery] = useState("");
     const [filter, setFilter] = useState(products);
-  
-    // const lastElementRef = useCallback(
-    //   (node) => {
-    //     // It is service provided by browser API to detect any intersecting elements
-    //     // https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver
-    //     const observer = new IntersectionObserver(([lastElement]) => {
-    //       if (lastElement.isIntersecting && !isLoading && !isNoMore) {
-    //         setPageNumber((pageNumber) => pageNumber + 1);
-    //       }
-    //     });
-    //     console.log("omy,2myyy");
-  
-    //     if (isNoMore) {
-    //       observer.disconnect();
-    //     }
-  
-    //     if (node) {
-    //       observer.observe(node);
-    //     }
-    //   },
-    //   [isLoading, isNoMore]
-    // );
   
     useEffect(() => {
       dispatch(fetchProducts({pageNumber,searchQuery }));

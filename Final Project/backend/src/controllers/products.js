@@ -53,7 +53,6 @@ export function saveProduct(req, res, next) {
  * @param {Function} next
  */
 export function updateProduct(req, res, next) {
-  console.log("k reee",req.body);
   productService
     .updateProduct(+req.params.productIdentifier, req.body)
     .then((data) => res.json(data))

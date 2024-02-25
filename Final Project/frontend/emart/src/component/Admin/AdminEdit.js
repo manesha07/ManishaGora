@@ -57,7 +57,6 @@ const EditProduct = () => {
         images: {added:images,removed:removeimages}
       }
       
-      console.log("k bhhhhhhhh",EditData)
         await productService.EditProduct(EditData,id).then(
           (response) => {
             const res = response.details;

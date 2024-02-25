@@ -1,8 +1,8 @@
 import dotenv from 'dotenv';
-
+import Knex from 'knex';
 // dotenv.config({ path: `../.env` });
 dotenv.config();
-console.log(process.env.DB_HOST);
+console.log("hehep",process.env.DB_CLIENT);
 const configuration = {
   client: process.env.DB_CLIENT,
   connection: {
@@ -23,4 +23,5 @@ const configuration = {
   }
 };
 
+export const connection = Knex(configuration);
 export default configuration;

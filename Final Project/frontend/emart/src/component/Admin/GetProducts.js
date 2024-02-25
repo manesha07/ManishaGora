@@ -17,10 +17,7 @@ const GetProducts = () => {
   const product = useSelector((store) => store.products.list);
   const navigate = useNavigate();
 
-  console.log("kiiii",product);
-
   const DeleteProduct = async(id) => {
-    console.log(id);
     await productService.deleteProduct(id).then(
       (response) => {
         const res = response;

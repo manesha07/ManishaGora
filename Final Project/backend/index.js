@@ -25,6 +25,7 @@ server.use(router);
 
 server.use(errorHandler);
 
+console.log({"port":process.env.TOKEN_SECRET})
 server.listen(process.env.PORT, () => {
   logger.info(`Listening on localhost:${process.env.PORT}`);
 });

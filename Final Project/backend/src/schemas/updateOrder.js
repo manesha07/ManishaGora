@@ -6,5 +6,4 @@ const schema = Joi.object({
   total: Joi.number().integer().optional(),
   status: Joi.string().max(50).optional()
 });
-console.log("schema",schema)
 export default schema;

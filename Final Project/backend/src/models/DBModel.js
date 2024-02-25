@@ -2,7 +2,7 @@ import Knex from 'knex';
 import camelize from 'camelize';
 import snakeize from 'snakeize';
 
-import connection from '../knexfile.js';
+import {connection} from '../knexfile.js';
 
 /**
  * Base model for that can be used for all tables.
@@ -12,7 +12,7 @@ import connection from '../knexfile.js';
 class DBModel {
   constructor(table) {
     this.table = table;
-    this.connection = Knex(connection);
+    this.connection = connection;
   }
 
   async getAll() {
@@ -29,7 +29,7 @@ class DBModel {
 
   async findByParams(params) {
     const [data] = await this.connection(this.table).select('*').where(snakeize(params));
-
+   
     return data ? camelize(data) : null;
   }
 
@@ -46,15 +46,12 @@ class DBModel {
   }
 
   async removeById(id) {
-    console.log("llllllif",id);
     const result = await this.connection(this.table).delete().where({ id });
-      console.log("llllll",result);
     return camelize(result);
   }
 
   async removeByParams(params) {
     const result = await this.connection(this.table).delete().where(snakeize(params));
-    console.log("result1",result);
     return camelize(result);
   }
 

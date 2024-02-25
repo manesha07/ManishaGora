@@ -17,8 +17,6 @@ import getProductsQuerySchema from './schemas/getProductsQuery.js';
 import { validateBody, validateQueryParams } from './middleware/validation.js';
 
 const router = Router();
-console.log("pop",addCustomerSchema);
-console.log("popo",validateBody);
 
 router.get('/', apiController.getAPIDetails);
 
