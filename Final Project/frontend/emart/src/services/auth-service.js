@@ -1,9 +1,11 @@
 import axios from "axios";
 import authHeader from "./auth-header";
+import config from "../config";
 
-const register = (email, password,name,username) => {
+const register = (email, password, name, username) => {
+  const url = `${config.apiUrl}${config.endpoints.users}`;
   return axios
-    .post(`http://127.0.0.1:8848/users`, {
+    .post(url, {
       email,
       password,
       name,
@@ -18,8 +20,9 @@ const register = (email, password,name,username) => {
 };
 
 const login = (email, password) => {
+  const url = `${config.apiUrl}${config.endpoints.login}`;
   return axios
-    .post(`http://127.0.0.1:8848/login`, {
+    .post(url, {
       email,
       password,
     })
@@ -27,22 +30,22 @@ const login = (email, password) => {
       if (response.data.data.token) {
         localStorage.setItem("user", JSON.stringify(response.data.data));
       }
-
       return response.data.data;
     });
 };
 
 const customerlogin = (email, password) => {
+  const url = `${config.apiUrl}${config.endpoints.customerlogin}`;
   return axios
-    .post(`http://127.0.0.1:8848/customerlogin`, {
+    .post(url, {
       email,
       password,
     })
     .then((response) => {
+      console.log("rescust",response)
       if (response.data.data.user) {
         localStorage.setItem("user", JSON.stringify(response.data.data));
       }
-
       return response.data.data;
     });
 };

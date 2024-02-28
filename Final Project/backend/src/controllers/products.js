@@ -11,7 +11,8 @@ export function getProducts(req, res, next) {
   console.log("pc",req.query);
   productService
     .getAllProducts(req.query)
-    .then((data) => res.json(data))
+    .then((data) => {
+    return res.json(data)})
     .catch((err) => next(err));
 }
 

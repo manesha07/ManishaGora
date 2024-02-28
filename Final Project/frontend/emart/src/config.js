@@ -9,7 +9,10 @@ const config = {
     customers:"customers",
     customer:"customers/:id",
     orders:"orders",
-    order:"orders/:id"
+    order:"orders/:id",
+    users:"users",
+    login:"login",
+    customerlogin:"customerlogin"
   },
 };
 

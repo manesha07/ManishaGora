@@ -12,7 +12,7 @@ import ProductImage from '../models/ProductImage.js';
  * @return {Object}
  */
 export async function getAllProducts(query) {
-  console.log(query);
+  console.log({query});
   const productNameFilter = query.productName ? query.productName.split(',') : [];
 
   logger.info('Fetching a list of all products this');
@@ -46,7 +46,6 @@ export async function getProduct(id) {
   logger.info(`Fetching product with productId ${id}`);
 
   const product = await new Products().getProductDetails(id);
-  console.log("prro",product);
   if (!product) {
     logger.error(`Cannot find product with productId ${id}`);
 
@@ -57,8 +56,6 @@ export async function getProduct(id) {
     ...product,
     images: product.images ? product.images.split(',') : []
   };
-
-  console.log(parsedProduct);
 
   return {
     data: parsedProduct,
@@ -75,7 +72,6 @@ export async function getProduct(id) {
 export async function addProduct(params) {
   logger.debug('Payload received', params);
 
-  console.log("addproduct",params)
   const productTableInsertParams = {
     productName: params.product_name,
     price: params.price,
@@ -97,9 +93,8 @@ export async function addProduct(params) {
   }
 
   logger.info('Saving the new product data');
-  console.log("newdata1",productTableInsertParams);
+
   const [productTableInsertedData] = await new Products().save(productTableInsertParams);
-  console.log("newdata",productTableInsertedData);
 
   if (params.images.length) {
     logger.info('Creating insert data for product_images table');
@@ -157,17 +152,14 @@ export async function updateProduct(id, params) {
   // 1. Using the same update endpoint for product images as well -> Appropriate handler
   // 2. Using a separate endpoint(API) altogether
 
-  console.log("images",params.images.added,params.images.removed);
   if (params.images?.added?.length) {
     params.images.added.forEach(async (url) => {
-      console.log("urlll",url);
       await new ProductImage().save({ productId:id, imageUrl: url });
     });
   }
 
   if (params.images?.removed?.length) {
     params.images.removed.forEach(async (url) => {
-      console.log("urlll2",url);
       await new ProductImage().removeByParams({ productId:id, imageUrl: url });
     });
   }
